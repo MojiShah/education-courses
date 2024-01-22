@@ -23,7 +23,7 @@
     color: yellowgreen;
 }
 
-button {
+.home-btn {
     background-color: #000000;
     color: #fff;
     border: crimson solid 1px;
@@ -35,7 +35,7 @@ button {
     transition: all 0.5s;
 }
 
-button:hover {
+.home-btn:hover {
     opacity: 0.4;
     box-shadow: 0 0 20px 15px rgba(218, 51, 84, 0.386);
     font-weight: bold;

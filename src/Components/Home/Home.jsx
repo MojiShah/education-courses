@@ -7,7 +7,7 @@ function Home() {
         <div className='home'>
             <h1>Welcome to our Professional education website</h1>
             <Link to='/courses'>
-                <button>Get Courses...</button>
+                <button className='home-btn'>Get Courses...</button>
             </Link>
         </div>
     )
