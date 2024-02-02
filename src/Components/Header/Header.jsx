@@ -8,11 +8,17 @@ function Header() {
         <>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container className='nav-container'>
-                    <Navbar.Brand href="#home" style={{color:'crimson'}}>Moji Shah</Navbar.Brand>
+                    <Navbar.Brand href="#home" style={{ color: 'crimson' }}>Moji Shah</Navbar.Brand>
                     <Nav className='menus'>
-                            <Link to="/" className='menu-items'>Home</Link>
-                            <Link to="/courses" className='menu-items'>Courses</Link>
-                            <Link to="/about" className='menu-items'>About us</Link>
+                        <Link to="/" className='menu-items'>Home</Link>
+                        <Link to="/courses" className='menu-items'>Courses</Link>
+                        <Link to="/about" className='menu-items'>
+                            <button>About us</button>
+                            <div className='sub-about'>
+                                <Link to='/about/setting' className='menu-items-about'>Setting</Link>
+                                <Link to='/about/dashboard' className='menu-items-about'>Dashboard</Link>
+                            </div>
+                        </Link>
                     </Nav>
                 </Container>
             </Navbar>

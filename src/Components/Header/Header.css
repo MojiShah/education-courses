@@ -1,3 +1,9 @@
+.menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .menu-items {
     margin-left: 50px;
     text-decoration: none;
@@ -6,11 +12,50 @@
     font-size: 20px;
 }
 
-.menu-items:hover {
+.menu-items:hover,
+.menu-items:last-child button:hover {
     color: red;
     /* font-size: 25px; */
     font-weight: bold;
 }
+
+
+.sub-about {
+    display: none;
+    position: absolute;
+    top: 60px;
+    /* right: 90px; */
+    /* background: #2c2b2b; */
+}
+
+.menu-items-about {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: inherit;
+}
+
+.menu-items-about:hover {
+    color: red;
+    /* font-size: 25px; */
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.menu-items:last-child button {
+    background-color: inherit;
+    height: 100%;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.menu-items:last-child:hover .sub-about {
+    display: block;
+    background-color: inherit;
+}
+
 
 .header-section {
     width: 100vw;
@@ -26,7 +71,7 @@
     height: 100%;
 }
 
-.header-img img{
+.header-img img {
     width: 85%;
     height: 100%;
     opacity: 0.7;
@@ -45,11 +90,11 @@
     color: #fff;
 }
 
-.header-discription h1 span{
+.header-discription h1 span {
     color: crimson;
 }
 
-.header-discription h1 button{
+.header-discription h1 button {
     background-color: #000000;
     color: #fff;
     border: crimson solid 1px;
@@ -61,7 +106,7 @@
     transition: all 0.5s;
 }
 
-.header-discription h1 button:hover{
+.header-discription h1 button:hover {
     /* border: crimson solid 3px; */
     opacity: 0.8;
     box-shadow: 0 0 20px 15px rgba(218, 51, 84, 0.386);
@@ -69,32 +114,32 @@
 }
 
 @media only screen and (max-width:576px) {
-    .nav-container{
+    .nav-container {
         margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .menus{
+    .menus {
         display: flex;
         flex-direction: column !important;
         align-items: center;
         text-align: left;
     }
 
-    .menu-items{
+    .menu-items {
         display: block;
         width: 100%;
     }
 
-    .header-section{
+    .header-section {
         display: flex;
         flex-direction: column;
     }
 
-    .header-discription h1{
+    .header-discription h1 {
         font-size: 20px;
     }
-    
+
 }
