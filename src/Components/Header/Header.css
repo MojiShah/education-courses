@@ -42,7 +42,7 @@
     background-color: #f2f2f2;
 }
 
-.menu-items:last-child button {
+.menu-items:nth-child(3) button {
     background-color: inherit;
     height: 100%;
     padding: 10px 20px;
@@ -51,7 +51,7 @@
     outline: none;
 }
 
-.menu-items:last-child:hover .sub-about {
+.menu-items:nth-child(3):hover .sub-about {
     display: block;
     background-color: inherit;
 }

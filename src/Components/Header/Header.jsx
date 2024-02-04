@@ -19,6 +19,8 @@ function Header() {
                                 <Link to='/about/dashboard' className='menu-items-about'>Dashboard</Link>
                             </div>
                         </Link>
+                        <Link to='/signin' className='menu-items' >Sign in</Link>
+                        <Link to='/panel' className='menu-items' >Panel </Link>
                     </Nav>
                 </Container>
             </Navbar>
